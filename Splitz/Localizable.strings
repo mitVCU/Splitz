@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  Splitz
+
+  Created by Mit Amin on 1/16/21.
+  
+*/
+
+// MARK: BillScannerViewController
+
+"BillScannerViewController_Label_ScanInProgress" = "Scanning the bill...";
+"BillScannerViewController_Label_ScanComplete" = "Scan Complete!";
+"BillScannerViewController_Button_ManualAmountEntry" = "Enter amount manually";
+
+
+// MARK: BillDetailsViewController
+
+"BillDetailsViewController_Title" = "Bill Details"
+"BillDetailsViewController_SubTitle" = "Bill Amount"
+"BillDetailsViewController_PeopleHeader" = "Add people"
+"BillDetailsViewController_Label_TipHeader" = "Add tip amount"
+"BillDetailsViewController_Label_SplitHeader" = "Split"
+"BillDetailsViewController_Button_Equally" = "Equally"
+"BillDetailsViewController_Button_Itemized" = "By Item"
