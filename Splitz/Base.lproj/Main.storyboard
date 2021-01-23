@@ -11,7 +11,7 @@
         <!--Bill Scanner-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Bill Scanner" id="BYZ-38-t0r" customClass="ViewController" customModule="Splitz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Bill Scanner" id="BYZ-38-t0r" customClass="BillScannerViewController" customModule="Splitz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +25,9 @@
                                             <constraint firstAttribute="height" constant="60" id="dWa-Ex-xeJ"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="BiB-hR-Lef" kind="show" id="id1-PB-zX2"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRO-sQ-bSY">
                                         <rect key="frame" x="24" y="30" width="366" height="21"/>
@@ -63,17 +66,64 @@
             </objects>
             <point key="canvasLocation" x="979.71014492753636" y="71.651785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Bill Titles-->
         <scene sceneID="Xk7-nH-RJM">
             <objects>
-                <viewController id="BiB-hR-Lef" sceneMemberID="viewController">
+                <viewController id="BiB-hR-Lef" customClass="BillDetailsViewController" customModule="Splitz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TlI-I7-bzE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zl0-lC-XE6">
+                                <rect key="frame" x="0.0" y="140" width="414" height="99"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwS-gH-QkF">
+                                        <rect key="frame" x="30" y="16" width="64.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-R4-y2M">
+                                        <rect key="frame" x="30" y="38.5" width="84" height="30.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Ka4-R4-y2M" secondAttribute="trailing" constant="300" id="3EW-0S-uuw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ka4-R4-y2M" secondAttribute="bottom" constant="30" id="DqA-Xd-fkL"/>
+                                    <constraint firstItem="Ka4-R4-y2M" firstAttribute="leading" secondItem="zl0-lC-XE6" secondAttribute="leading" constant="30" id="Yy7-36-02l"/>
+                                    <constraint firstItem="SwS-gH-QkF" firstAttribute="top" secondItem="zl0-lC-XE6" secondAttribute="top" constant="16" id="lop-vr-NKp"/>
+                                    <constraint firstItem="Ka4-R4-y2M" firstAttribute="top" secondItem="SwS-gH-QkF" secondAttribute="bottom" constant="8" id="p2L-Hg-odF"/>
+                                    <constraint firstItem="SwS-gH-QkF" firstAttribute="leading" secondItem="zl0-lC-XE6" secondAttribute="leading" constant="30" id="xb0-dj-IeB"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNm-Qe-c1i">
+                                <rect key="frame" x="0.0" y="239" width="414" height="657"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VfC-oS-LuV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zl0-lC-XE6" firstAttribute="leading" secondItem="VfC-oS-LuV" secondAttribute="leading" id="Ga5-HA-LCe"/>
+                            <constraint firstItem="oNm-Qe-c1i" firstAttribute="top" secondItem="zl0-lC-XE6" secondAttribute="bottom" id="OWa-6n-QHF"/>
+                            <constraint firstItem="VfC-oS-LuV" firstAttribute="trailing" secondItem="zl0-lC-XE6" secondAttribute="trailing" id="Oet-Y0-1Ep"/>
+                            <constraint firstItem="oNm-Qe-c1i" firstAttribute="leading" secondItem="VfC-oS-LuV" secondAttribute="leading" id="RLC-kh-CKX"/>
+                            <constraint firstAttribute="bottom" secondItem="oNm-Qe-c1i" secondAttribute="bottom" id="U2M-8F-MAF"/>
+                            <constraint firstItem="zl0-lC-XE6" firstAttribute="top" secondItem="VfC-oS-LuV" secondAttribute="top" id="UZD-uT-SXl"/>
+                            <constraint firstItem="VfC-oS-LuV" firstAttribute="trailing" secondItem="oNm-Qe-c1i" secondAttribute="trailing" id="ZJh-lb-dHi"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hlz-Er-qSo"/>
+                    <navigationItem key="navigationItem" title="Bill Titles" id="hlz-Er-qSo"/>
+                    <connections>
+                        <outlet property="billAmountLabel" destination="SwS-gH-QkF" id="jbo-DL-rZa"/>
+                        <outlet property="billAmountTextField" destination="Ka4-R4-y2M" id="aew-Fc-Bxc"/>
+                        <outlet property="billDetailsTableView" destination="oNm-Qe-c1i" id="ZJ2-w1-jzJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8n4-rO-xCF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,6 +152,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

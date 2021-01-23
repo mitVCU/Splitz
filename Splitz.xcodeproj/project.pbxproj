@@ -10,13 +10,18 @@
 		D2A6937F25B392F0009C1F69 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2A6937E25B392F0009C1F69 /* Localizable.strings */; };
 		D2B07C87259AC02B003CDBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07C86259AC02B003CDBC6 /* AppDelegate.swift */; };
 		D2B07C89259AC02B003CDBC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07C88259AC02B003CDBC6 /* SceneDelegate.swift */; };
-		D2B07C8B259AC02B003CDBC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07C8A259AC02B003CDBC6 /* ViewController.swift */; };
+		D2B07C8B259AC02B003CDBC6 /* BillScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07C8A259AC02B003CDBC6 /* BillScannerViewController.swift */; };
 		D2B07C8E259AC02B003CDBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B07C8C259AC02B003CDBC6 /* Main.storyboard */; };
 		D2B07C91259AC02B003CDBC6 /* Splitz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2B07C8F259AC02B003CDBC6 /* Splitz.xcdatamodeld */; };
 		D2B07C93259AC02C003CDBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B07C92259AC02C003CDBC6 /* Assets.xcassets */; };
 		D2B07C96259AC02C003CDBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B07C94259AC02C003CDBC6 /* LaunchScreen.storyboard */; };
 		D2B07CA1259AC02D003CDBC6 /* SplitzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07CA0259AC02D003CDBC6 /* SplitzTests.swift */; };
 		D2B07CAC259AC02D003CDBC6 /* SplitzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07CAB259AC02D003CDBC6 /* SplitzUITests.swift */; };
+		D2B60D7F25BBBA9400646196 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B60D7E25BBBA9400646196 /* BillDetailsViewController.swift */; };
+		D2BA06BD25BBF0620016837D /* OptionSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BA06BB25BBF0620016837D /* OptionSelectionTableViewCell.xib */; };
+		D2BA06BE25BBF0620016837D /* OptionSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BA06BC25BBF0620016837D /* OptionSelectionTableViewCell.swift */; };
+		D2BA06CB25BBF1B20016837D /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BA06C925BBF1B20016837D /* OptionCollectionViewCell.swift */; };
+		D2BA06CC25BBF1B20016837D /* OptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BA06CA25BBF1B20016837D /* OptionCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +46,7 @@
 		D2B07C83259AC02B003CDBC6 /* Splitz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splitz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B07C86259AC02B003CDBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2B07C88259AC02B003CDBC6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2B07C8A259AC02B003CDBC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2B07C8A259AC02B003CDBC6 /* BillScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillScannerViewController.swift; sourceTree = "<group>"; };
 		D2B07C8D259AC02B003CDBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2B07C90259AC02B003CDBC6 /* Splitz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Splitz.xcdatamodel; sourceTree = "<group>"; };
 		D2B07C92259AC02C003CDBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +58,11 @@
 		D2B07CA7259AC02D003CDBC6 /* SplitzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B07CAB259AC02D003CDBC6 /* SplitzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitzUITests.swift; sourceTree = "<group>"; };
 		D2B07CAD259AC02D003CDBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2B60D7E25BBBA9400646196 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
+		D2BA06BB25BBF0620016837D /* OptionSelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		D2BA06BC25BBF0620016837D /* OptionSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D2BA06C925BBF1B20016837D /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2BA06CA25BBF1B20016837D /* OptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +115,15 @@
 			children = (
 				D2B07C86259AC02B003CDBC6 /* AppDelegate.swift */,
 				D2B07C88259AC02B003CDBC6 /* SceneDelegate.swift */,
-				D2B07C8A259AC02B003CDBC6 /* ViewController.swift */,
+				D2B07C8A259AC02B003CDBC6 /* BillScannerViewController.swift */,
 				D2B07C8C259AC02B003CDBC6 /* Main.storyboard */,
 				D2B07C92259AC02C003CDBC6 /* Assets.xcassets */,
 				D2B07C94259AC02C003CDBC6 /* LaunchScreen.storyboard */,
 				D2B07C97259AC02C003CDBC6 /* Info.plist */,
 				D2B07C8F259AC02B003CDBC6 /* Splitz.xcdatamodeld */,
 				D2A6937E25B392F0009C1F69 /* Localizable.strings */,
+				D2B60D7E25BBBA9400646196 /* BillDetailsViewController.swift */,
+				D2BA06BA25BBF0160016837D /* OptionSelectionCell */,
 			);
 			path = Splitz;
 			sourceTree = "<group>";
@@ -132,6 +144,25 @@
 				D2B07CAD259AC02D003CDBC6 /* Info.plist */,
 			);
 			path = SplitzUITests;
+			sourceTree = "<group>";
+		};
+		D2BA06BA25BBF0160016837D /* OptionSelectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				D2BA06C825BBF1810016837D /* OptionCollectionViewCell */,
+				D2BA06BC25BBF0620016837D /* OptionSelectionTableViewCell.swift */,
+				D2BA06BB25BBF0620016837D /* OptionSelectionTableViewCell.xib */,
+			);
+			path = OptionSelectionCell;
+			sourceTree = "<group>";
+		};
+		D2BA06C825BBF1810016837D /* OptionCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D2BA06C925BBF1B20016837D /* OptionCollectionViewCell.swift */,
+				D2BA06CA25BBF1B20016837D /* OptionCollectionViewCell.xib */,
+			);
+			path = OptionCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2B07C96259AC02C003CDBC6 /* LaunchScreen.storyboard in Resources */,
+				D2BA06CC25BBF1B20016837D /* OptionCollectionViewCell.xib in Resources */,
 				D2A6937F25B392F0009C1F69 /* Localizable.strings in Resources */,
+				D2BA06BD25BBF0620016837D /* OptionSelectionTableViewCell.xib in Resources */,
 				D2B07C93259AC02C003CDBC6 /* Assets.xcassets in Resources */,
 				D2B07C8E259AC02B003CDBC6 /* Main.storyboard in Resources */,
 			);
@@ -265,9 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2B07C8B259AC02B003CDBC6 /* ViewController.swift in Sources */,
+				D2B07C8B259AC02B003CDBC6 /* BillScannerViewController.swift in Sources */,
 				D2B07C91259AC02B003CDBC6 /* Splitz.xcdatamodeld in Sources */,
+				D2B60D7F25BBBA9400646196 /* BillDetailsViewController.swift in Sources */,
 				D2B07C87259AC02B003CDBC6 /* AppDelegate.swift in Sources */,
+				D2BA06CB25BBF1B20016837D /* OptionCollectionViewCell.swift in Sources */,
+				D2BA06BE25BBF0620016837D /* OptionSelectionTableViewCell.swift in Sources */,
 				D2B07C89259AC02B003CDBC6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
