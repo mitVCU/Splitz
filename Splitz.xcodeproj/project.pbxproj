@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D275A28225FD857300C6AAE6 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D275A28125FD857300C6AAE6 /* UIView+Ext.swift */; };
 		D2A6937F25B392F0009C1F69 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2A6937E25B392F0009C1F69 /* Localizable.strings */; };
 		D2B07C87259AC02B003CDBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07C86259AC02B003CDBC6 /* AppDelegate.swift */; };
 		D2B07C89259AC02B003CDBC6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07C88259AC02B003CDBC6 /* SceneDelegate.swift */; };
@@ -18,10 +19,11 @@
 		D2B07CA1259AC02D003CDBC6 /* SplitzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07CA0259AC02D003CDBC6 /* SplitzTests.swift */; };
 		D2B07CAC259AC02D003CDBC6 /* SplitzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07CAB259AC02D003CDBC6 /* SplitzUITests.swift */; };
 		D2B60D7F25BBBA9400646196 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B60D7E25BBBA9400646196 /* BillDetailsViewController.swift */; };
-		D2BA06BD25BBF0620016837D /* OptionSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BA06BB25BBF0620016837D /* OptionSelectionTableViewCell.xib */; };
-		D2BA06BE25BBF0620016837D /* OptionSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BA06BC25BBF0620016837D /* OptionSelectionTableViewCell.swift */; };
-		D2BA06CB25BBF1B20016837D /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BA06C925BBF1B20016837D /* OptionCollectionViewCell.swift */; };
-		D2BA06CC25BBF1B20016837D /* OptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BA06CA25BBF1B20016837D /* OptionCollectionViewCell.xib */; };
+		D2F45939265AC22900353702 /* HorizontalSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45937265AC22900353702 /* HorizontalSelectionTableViewCell.swift */; };
+		D2F4593A265AC22900353702 /* HorizontalSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F45938265AC22900353702 /* HorizontalSelectionTableViewCell.xib */; };
+		D2F45942265AC46600353702 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45941265AC46600353702 /* Extensions.swift */; };
+		D2F4594A265B3EA400353702 /* HorizontalSelectionTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45949265B3EA400353702 /* HorizontalSelectionTableViewCellViewModel.swift */; };
+		D2F4594F265B49A500353702 /* BillDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4594E265B49A500353702 /* BillDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D275A28125FD857300C6AAE6 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		D2A6937E25B392F0009C1F69 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D2B07C83259AC02B003CDBC6 /* Splitz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splitz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B07C86259AC02B003CDBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +62,11 @@
 		D2B07CAB259AC02D003CDBC6 /* SplitzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitzUITests.swift; sourceTree = "<group>"; };
 		D2B07CAD259AC02D003CDBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2B60D7E25BBBA9400646196 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
-		D2BA06BB25BBF0620016837D /* OptionSelectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionSelectionTableViewCell.xib; sourceTree = "<group>"; };
-		D2BA06BC25BBF0620016837D /* OptionSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSelectionTableViewCell.swift; sourceTree = "<group>"; };
-		D2BA06C925BBF1B20016837D /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
-		D2BA06CA25BBF1B20016837D /* OptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionCollectionViewCell.xib; sourceTree = "<group>"; };
+		D2F45937265AC22900353702 /* HorizontalSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D2F45938265AC22900353702 /* HorizontalSelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalSelectionTableViewCell.xib; sourceTree = "<group>"; };
+		D2F45941265AC46600353702 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D2F45949265B3EA400353702 /* HorizontalSelectionTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSelectionTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		D2F4594E265B49A500353702 /* BillDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D275A27C25FD83AE00C6AAE6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D2B07C8F259AC02B003CDBC6 /* Splitz.xcdatamodeld */,
+				D2B07C88259AC02B003CDBC6 /* SceneDelegate.swift */,
+				D2B07C86259AC02B003CDBC6 /* AppDelegate.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D275A27D25FD83EE00C6AAE6 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				D2A6937E25B392F0009C1F69 /* Localizable.strings */,
+				D2F45941265AC46600353702 /* Extensions.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		D275A27E25FD842B00C6AAE6 /* BillScanner */ = {
+			isa = PBXGroup;
+			children = (
+				D2B07C8A259AC02B003CDBC6 /* BillScannerViewController.swift */,
+			);
+			path = BillScanner;
+			sourceTree = "<group>";
+		};
+		D275A27F25FD844D00C6AAE6 /* BillDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D2F45936265AC16B00353702 /* Cells */,
+				D2B60D7E25BBBA9400646196 /* BillDetailsViewController.swift */,
+				D2F4594E265B49A500353702 /* BillDetailsViewModel.swift */,
+			);
+			path = BillDetails;
+			sourceTree = "<group>";
+		};
+		D275A28025FD853E00C6AAE6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D275A28125FD857300C6AAE6 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D2B07C7A259AC02B003CDBC6 = {
 			isa = PBXGroup;
 			children = (
@@ -113,17 +162,15 @@
 		D2B07C85259AC02B003CDBC6 /* Splitz */ = {
 			isa = PBXGroup;
 			children = (
-				D2B07C86259AC02B003CDBC6 /* AppDelegate.swift */,
-				D2B07C88259AC02B003CDBC6 /* SceneDelegate.swift */,
-				D2B07C8A259AC02B003CDBC6 /* BillScannerViewController.swift */,
+				D275A28025FD853E00C6AAE6 /* Extensions */,
+				D275A27E25FD842B00C6AAE6 /* BillScanner */,
+				D275A27F25FD844D00C6AAE6 /* BillDetails */,
 				D2B07C8C259AC02B003CDBC6 /* Main.storyboard */,
-				D2B07C92259AC02C003CDBC6 /* Assets.xcassets */,
 				D2B07C94259AC02C003CDBC6 /* LaunchScreen.storyboard */,
+				D275A27C25FD83AE00C6AAE6 /* Config */,
+				D275A27D25FD83EE00C6AAE6 /* Localization */,
+				D2B07C92259AC02C003CDBC6 /* Assets.xcassets */,
 				D2B07C97259AC02C003CDBC6 /* Info.plist */,
-				D2B07C8F259AC02B003CDBC6 /* Splitz.xcdatamodeld */,
-				D2A6937E25B392F0009C1F69 /* Localizable.strings */,
-				D2B60D7E25BBBA9400646196 /* BillDetailsViewController.swift */,
-				D2BA06BA25BBF0160016837D /* OptionSelectionCell */,
 			);
 			path = Splitz;
 			sourceTree = "<group>";
@@ -146,23 +193,14 @@
 			path = SplitzUITests;
 			sourceTree = "<group>";
 		};
-		D2BA06BA25BBF0160016837D /* OptionSelectionCell */ = {
+		D2F45936265AC16B00353702 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D2BA06C825BBF1810016837D /* OptionCollectionViewCell */,
-				D2BA06BC25BBF0620016837D /* OptionSelectionTableViewCell.swift */,
-				D2BA06BB25BBF0620016837D /* OptionSelectionTableViewCell.xib */,
+				D2F45937265AC22900353702 /* HorizontalSelectionTableViewCell.swift */,
+				D2F45938265AC22900353702 /* HorizontalSelectionTableViewCell.xib */,
+				D2F45949265B3EA400353702 /* HorizontalSelectionTableViewCellViewModel.swift */,
 			);
-			path = OptionSelectionCell;
-			sourceTree = "<group>";
-		};
-		D2BA06C825BBF1810016837D /* OptionCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				D2BA06C925BBF1B20016837D /* OptionCollectionViewCell.swift */,
-				D2BA06CA25BBF1B20016837D /* OptionCollectionViewCell.xib */,
-			);
-			path = OptionCollectionViewCell;
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2B07C96259AC02C003CDBC6 /* LaunchScreen.storyboard in Resources */,
-				D2BA06CC25BBF1B20016837D /* OptionCollectionViewCell.xib in Resources */,
 				D2A6937F25B392F0009C1F69 /* Localizable.strings in Resources */,
-				D2BA06BD25BBF0620016837D /* OptionSelectionTableViewCell.xib in Resources */,
 				D2B07C93259AC02C003CDBC6 /* Assets.xcassets in Resources */,
+				D2F4593A265AC22900353702 /* HorizontalSelectionTableViewCell.xib in Resources */,
 				D2B07C8E259AC02B003CDBC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,12 +335,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F4594A265B3EA400353702 /* HorizontalSelectionTableViewCellViewModel.swift in Sources */,
+				D275A28225FD857300C6AAE6 /* UIView+Ext.swift in Sources */,
 				D2B07C8B259AC02B003CDBC6 /* BillScannerViewController.swift in Sources */,
+				D2F45942265AC46600353702 /* Extensions.swift in Sources */,
+				D2F4594F265B49A500353702 /* BillDetailsViewModel.swift in Sources */,
 				D2B07C91259AC02B003CDBC6 /* Splitz.xcdatamodeld in Sources */,
+				D2F45939265AC22900353702 /* HorizontalSelectionTableViewCell.swift in Sources */,
 				D2B60D7F25BBBA9400646196 /* BillDetailsViewController.swift in Sources */,
 				D2B07C87259AC02B003CDBC6 /* AppDelegate.swift in Sources */,
-				D2BA06CB25BBF1B20016837D /* OptionCollectionViewCell.swift in Sources */,
-				D2BA06BE25BBF0620016837D /* OptionSelectionTableViewCell.swift in Sources */,
 				D2B07C89259AC02B003CDBC6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
