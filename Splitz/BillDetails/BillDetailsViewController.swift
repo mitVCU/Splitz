@@ -8,9 +8,10 @@
 import UIKit
 
 enum state {
-    case split
-    case itemized
+    case automatedEntry
+    case manualEntry
 }
+
 
 class BillDetailsViewController: UIViewController {
 
@@ -22,15 +23,16 @@ class BillDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTextField()
+        billDetailsTableView.delegate = self
+        billDetailsTableView.dataSource = self
+        
+        let HorizontalCell = UINib(nibName:"HorizontalSelectionTableViewCell", bundle: nil)
+        billDetailsTableView.register(HorizontalCell, forCellReuseIdentifier: "HorizontalSelectionTableViewCell")
     }
     
     func configureTextField() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard (_:)))
         view.addGestureRecognizer(tapGesture)
-    }
-    
-    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
-        billAmountTextField.resignFirstResponder()
     }
     
 }
@@ -43,19 +45,22 @@ extension BillDetailsViewController: UITableViewDelegate {
 // MARK: - UITableViewDataSource
 extension BillDetailsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = billDetailsTableView.dequeueReusableCell(withIdentifier:"HorizontalSelectionTableViewCell", for: indexPath) as! HorizontalSelectionTableViewCell
+        return cell
     }
-    
-    
 }
 
 
 // MARK: - UITextFieldDelegate
 extension BillDetailsViewController: UITextFieldDelegate {
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        billAmountTextField.resignFirstResponder()
+    }
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         
     }

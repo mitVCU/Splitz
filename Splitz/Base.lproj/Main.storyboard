@@ -24,15 +24,16 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="dWa-Ex-xeJ"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Manually Split the Bill"/>
                                         <connections>
                                             <segue destination="BiB-hR-Lef" kind="show" id="id1-PB-zX2"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRO-sQ-bSY">
                                         <rect key="frame" x="24" y="30" width="366" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.68200606109999995" green="0.68533939119999998" blue="0.73920935389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -49,7 +50,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="backgroundColor" red="0.94069927929999997" green="0.9481280446" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="uRa-Cp-pk2" secondAttribute="bottom" id="LWw-jX-cHI"/>
                             <constraint firstItem="uRa-Cp-pk2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SvO-uc-Cj9"/>
@@ -58,6 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Bill Scanner" id="MWB-Ua-w2i"/>
                     <connections>
+                        <outlet property="billManagerView" destination="uRa-Cp-pk2" id="QN0-qB-LSc"/>
                         <outlet property="billScanningStatusLabel" destination="DRO-sQ-bSY" id="Yrt-bk-mak"/>
                         <outlet property="manualAmountButton" destination="3dm-bV-Z4A" id="lZ0-dg-Ihr"/>
                     </connections>
@@ -66,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="979.71014492753636" y="71.651785714285708"/>
         </scene>
-        <!--Bill Titles-->
+        <!--Bill Details-->
         <scene sceneID="Xk7-nH-RJM">
             <objects>
                 <viewController id="BiB-hR-Lef" customClass="BillDetailsViewController" customModule="Splitz" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,35 +77,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zl0-lC-XE6">
-                                <rect key="frame" x="0.0" y="140" width="414" height="99"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="89.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwS-gH-QkF">
-                                        <rect key="frame" x="30" y="16" width="64.5" height="14.5"/>
+                                        <rect key="frame" x="21" y="8" width="64.5" height="14.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-R4-y2M">
-                                        <rect key="frame" x="30" y="38.5" width="84" height="30.5"/>
+                                        <rect key="frame" x="21" y="30.5" width="64" height="29"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHg-aP-o4d">
+                                        <rect key="frame" x="348" y="27" width="30" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="ycq-vo-bTM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="Scan"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Ka4-R4-y2M" secondAttribute="trailing" constant="300" id="3EW-0S-uuw"/>
+                                    <constraint firstItem="XHg-aP-o4d" firstAttribute="centerY" secondItem="zl0-lC-XE6" secondAttribute="centerY" id="DbA-my-3wO"/>
                                     <constraint firstAttribute="bottom" secondItem="Ka4-R4-y2M" secondAttribute="bottom" constant="30" id="DqA-Xd-fkL"/>
-                                    <constraint firstItem="Ka4-R4-y2M" firstAttribute="leading" secondItem="zl0-lC-XE6" secondAttribute="leading" constant="30" id="Yy7-36-02l"/>
-                                    <constraint firstItem="SwS-gH-QkF" firstAttribute="top" secondItem="zl0-lC-XE6" secondAttribute="top" constant="16" id="lop-vr-NKp"/>
+                                    <constraint firstItem="SwS-gH-QkF" firstAttribute="top" secondItem="zl0-lC-XE6" secondAttribute="top" constant="8" id="OeB-i7-Ym9"/>
+                                    <constraint firstAttribute="trailing" secondItem="XHg-aP-o4d" secondAttribute="trailing" constant="36" id="SIA-lK-ohg"/>
+                                    <constraint firstItem="XHg-aP-o4d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ka4-R4-y2M" secondAttribute="trailing" constant="36" id="X3e-5S-9a3"/>
+                                    <constraint firstItem="Ka4-R4-y2M" firstAttribute="leading" secondItem="zl0-lC-XE6" secondAttribute="leading" constant="21" id="iFn-ag-bAN"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SwS-gH-QkF" secondAttribute="trailing" id="jNt-rN-cCB"/>
                                     <constraint firstItem="Ka4-R4-y2M" firstAttribute="top" secondItem="SwS-gH-QkF" secondAttribute="bottom" constant="8" id="p2L-Hg-odF"/>
-                                    <constraint firstItem="SwS-gH-QkF" firstAttribute="leading" secondItem="zl0-lC-XE6" secondAttribute="leading" constant="30" id="xb0-dj-IeB"/>
+                                    <constraint firstItem="SwS-gH-QkF" firstAttribute="leading" secondItem="zl0-lC-XE6" secondAttribute="leading" constant="21" id="xb0-dj-IeB"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNm-Qe-c1i">
-                                <rect key="frame" x="0.0" y="239" width="414" height="657"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNm-Qe-c1i">
+                                <rect key="frame" x="0.0" y="229.5" width="414" height="666.5"/>
+                                <color key="backgroundColor" red="0.68200606109999995" green="0.68533939119999998" blue="0.73920935389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VfC-oS-LuV"/>
@@ -118,7 +132,7 @@
                             <constraint firstItem="VfC-oS-LuV" firstAttribute="trailing" secondItem="oNm-Qe-c1i" secondAttribute="trailing" id="ZJh-lb-dHi"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Bill Titles" id="hlz-Er-qSo"/>
+                    <navigationItem key="navigationItem" title="Bill Details" id="hlz-Er-qSo"/>
                     <connections>
                         <outlet property="billAmountLabel" destination="SwS-gH-QkF" id="jbo-DL-rZa"/>
                         <outlet property="billAmountTextField" destination="Ka4-R4-y2M" id="aew-Fc-Bxc"/>
@@ -137,7 +151,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="smT-r3-j3y">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -155,9 +169,6 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
