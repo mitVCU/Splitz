@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gys-a1-F4U">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gys-a1-F4U">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -77,46 +77,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zl0-lC-XE6">
-                                <rect key="frame" x="0.0" y="140" width="414" height="89.5"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="46"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwS-gH-QkF">
-                                        <rect key="frame" x="21" y="8" width="64.5" height="14.5"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <rect key="frame" x="21" y="8" width="129.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="$0.00" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ka4-R4-y2M">
-                                        <rect key="frame" x="21" y="30.5" width="64" height="29"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHg-aP-o4d">
-                                        <rect key="frame" x="348" y="27" width="30" height="36"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="ycq-vo-bTM"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <state key="normal" title="Scan"/>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="XHg-aP-o4d" firstAttribute="centerY" secondItem="zl0-lC-XE6" secondAttribute="centerY" id="DbA-my-3wO"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ka4-R4-y2M" secondAttribute="bottom" constant="30" id="DqA-Xd-fkL"/>
                                     <constraint firstItem="SwS-gH-QkF" firstAttribute="top" secondItem="zl0-lC-XE6" secondAttribute="top" constant="8" id="OeB-i7-Ym9"/>
-                                    <constraint firstAttribute="trailing" secondItem="XHg-aP-o4d" secondAttribute="trailing" constant="36" id="SIA-lK-ohg"/>
-                                    <constraint firstItem="XHg-aP-o4d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ka4-R4-y2M" secondAttribute="trailing" constant="36" id="X3e-5S-9a3"/>
-                                    <constraint firstItem="Ka4-R4-y2M" firstAttribute="leading" secondItem="zl0-lC-XE6" secondAttribute="leading" constant="21" id="iFn-ag-bAN"/>
+                                    <constraint firstItem="SwS-gH-QkF" firstAttribute="centerY" secondItem="zl0-lC-XE6" secondAttribute="centerY" id="gib-zH-w8P"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SwS-gH-QkF" secondAttribute="trailing" id="jNt-rN-cCB"/>
-                                    <constraint firstItem="Ka4-R4-y2M" firstAttribute="top" secondItem="SwS-gH-QkF" secondAttribute="bottom" constant="8" id="p2L-Hg-odF"/>
                                     <constraint firstItem="SwS-gH-QkF" firstAttribute="leading" secondItem="zl0-lC-XE6" secondAttribute="leading" constant="21" id="xb0-dj-IeB"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oNm-Qe-c1i">
-                                <rect key="frame" x="0.0" y="229.5" width="414" height="666.5"/>
+                                <rect key="frame" x="0.0" y="186" width="414" height="710"/>
                                 <color key="backgroundColor" red="0.68200606109999995" green="0.68533939119999998" blue="0.73920935389999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>
@@ -135,7 +115,7 @@
                     <navigationItem key="navigationItem" title="Bill Details" id="hlz-Er-qSo"/>
                     <connections>
                         <outlet property="billAmountLabel" destination="SwS-gH-QkF" id="jbo-DL-rZa"/>
-                        <outlet property="billAmountTextField" destination="Ka4-R4-y2M" id="aew-Fc-Bxc"/>
+                        <outlet property="billAmountView" destination="zl0-lC-XE6" id="UBb-gs-VMt"/>
                         <outlet property="billDetailsTableView" destination="oNm-Qe-c1i" id="ZJ2-w1-jzJ"/>
                     </connections>
                 </viewController>
