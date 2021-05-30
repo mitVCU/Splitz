@@ -18,7 +18,11 @@
 		D2B07C96259AC02C003CDBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B07C94259AC02C003CDBC6 /* LaunchScreen.storyboard */; };
 		D2B07CA1259AC02D003CDBC6 /* SplitzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07CA0259AC02D003CDBC6 /* SplitzTests.swift */; };
 		D2B07CAC259AC02D003CDBC6 /* SplitzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07CAB259AC02D003CDBC6 /* SplitzUITests.swift */; };
+		D2B216E0265D5374006FF226 /* Nibs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B216DF265D5374006FF226 /* Nibs.swift */; };
 		D2B60D7F25BBBA9400646196 /* BillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B60D7E25BBBA9400646196 /* BillDetailsViewController.swift */; };
+		D2F086D7265DE7D6001BB2B5 /* TipSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F086D5265DE7D6001BB2B5 /* TipSliderTableViewCell.swift */; };
+		D2F086D8265DE7D6001BB2B5 /* TipSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F086D6265DE7D6001BB2B5 /* TipSliderTableViewCell.xib */; };
+		D2F086DA265DE7E8001BB2B5 /* TipSliderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F086D9265DE7E8001BB2B5 /* TipSliderCellViewModel.swift */; };
 		D2F45939265AC22900353702 /* HorizontalSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45937265AC22900353702 /* HorizontalSelectionTableViewCell.swift */; };
 		D2F4593A265AC22900353702 /* HorizontalSelectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F45938265AC22900353702 /* HorizontalSelectionTableViewCell.xib */; };
 		D2F45942265AC46600353702 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F45941265AC46600353702 /* Extensions.swift */; };
@@ -61,7 +65,11 @@
 		D2B07CA7259AC02D003CDBC6 /* SplitzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SplitzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2B07CAB259AC02D003CDBC6 /* SplitzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitzUITests.swift; sourceTree = "<group>"; };
 		D2B07CAD259AC02D003CDBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2B216DF265D5374006FF226 /* Nibs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibs.swift; sourceTree = "<group>"; };
 		D2B60D7E25BBBA9400646196 /* BillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsViewController.swift; sourceTree = "<group>"; };
+		D2F086D5265DE7D6001BB2B5 /* TipSliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipSliderTableViewCell.swift; sourceTree = "<group>"; };
+		D2F086D6265DE7D6001BB2B5 /* TipSliderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipSliderTableViewCell.xib; sourceTree = "<group>"; };
+		D2F086D9265DE7E8001BB2B5 /* TipSliderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipSliderCellViewModel.swift; sourceTree = "<group>"; };
 		D2F45937265AC22900353702 /* HorizontalSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSelectionTableViewCell.swift; sourceTree = "<group>"; };
 		D2F45938265AC22900353702 /* HorizontalSelectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalSelectionTableViewCell.xib; sourceTree = "<group>"; };
 		D2F45941265AC46600353702 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				D275A28125FD857300C6AAE6 /* UIView+Ext.swift */,
+				D2B216DF265D5374006FF226 /* Nibs.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,12 +202,39 @@
 			path = SplitzUITests;
 			sourceTree = "<group>";
 		};
-		D2F45936265AC16B00353702 /* Cells */ = {
+		D2B142BF2664308E004F8014 /* AddItemCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddItemCell;
+			sourceTree = "<group>";
+		};
+		D2F086D4265DE7AE001BB2B5 /* TipSliderCell */ = {
+			isa = PBXGroup;
+			children = (
+				D2F086D5265DE7D6001BB2B5 /* TipSliderTableViewCell.swift */,
+				D2F086D6265DE7D6001BB2B5 /* TipSliderTableViewCell.xib */,
+				D2F086D9265DE7E8001BB2B5 /* TipSliderCellViewModel.swift */,
+			);
+			path = TipSliderCell;
+			sourceTree = "<group>";
+		};
+		D2F086DB265DEB3F001BB2B5 /* HorizontalSelectionCell */ = {
 			isa = PBXGroup;
 			children = (
 				D2F45937265AC22900353702 /* HorizontalSelectionTableViewCell.swift */,
 				D2F45938265AC22900353702 /* HorizontalSelectionTableViewCell.xib */,
 				D2F45949265B3EA400353702 /* HorizontalSelectionTableViewCellViewModel.swift */,
+			);
+			path = HorizontalSelectionCell;
+			sourceTree = "<group>";
+		};
+		D2F45936265AC16B00353702 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D2B142BF2664308E004F8014 /* AddItemCell */,
+				D2F086DB265DEB3F001BB2B5 /* HorizontalSelectionCell */,
+				D2F086D4265DE7AE001BB2B5 /* TipSliderCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -310,6 +346,7 @@
 				D2A6937F25B392F0009C1F69 /* Localizable.strings in Resources */,
 				D2B07C93259AC02C003CDBC6 /* Assets.xcassets in Resources */,
 				D2F4593A265AC22900353702 /* HorizontalSelectionTableViewCell.xib in Resources */,
+				D2F086D8265DE7D6001BB2B5 /* TipSliderTableViewCell.xib in Resources */,
 				D2B07C8E259AC02B003CDBC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,9 +376,12 @@
 				D275A28225FD857300C6AAE6 /* UIView+Ext.swift in Sources */,
 				D2B07C8B259AC02B003CDBC6 /* BillScannerViewController.swift in Sources */,
 				D2F45942265AC46600353702 /* Extensions.swift in Sources */,
+				D2F086DA265DE7E8001BB2B5 /* TipSliderCellViewModel.swift in Sources */,
 				D2F4594F265B49A500353702 /* BillDetailsViewModel.swift in Sources */,
 				D2B07C91259AC02B003CDBC6 /* Splitz.xcdatamodeld in Sources */,
+				D2F086D7265DE7D6001BB2B5 /* TipSliderTableViewCell.swift in Sources */,
 				D2F45939265AC22900353702 /* HorizontalSelectionTableViewCell.swift in Sources */,
+				D2B216E0265D5374006FF226 /* Nibs.swift in Sources */,
 				D2B60D7F25BBBA9400646196 /* BillDetailsViewController.swift in Sources */,
 				D2B07C87259AC02B003CDBC6 /* AppDelegate.swift in Sources */,
 				D2B07C89259AC02B003CDBC6 /* SceneDelegate.swift in Sources */,

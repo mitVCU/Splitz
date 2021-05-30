@@ -7,69 +7,68 @@
 
 import UIKit
 
-enum state {
-    case automatedEntry
-    case manualEntry
-}
+class BillDetailsViewController: UIViewController, UITableViewDelegate {
 
-
-class BillDetailsViewController: UIViewController {
-
+    @IBOutlet weak var billAmountView: UIView!
     @IBOutlet weak var billAmountLabel: UILabel!
     @IBOutlet weak var billDetailsTableView: UITableView!
     @IBOutlet weak var billAmountTextField: UITextField!
     
+    var model = BillDetailsViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTextField()
+        configureNavigationBar()
+        configureBillAmountView()
+        configureTableview()
+    }
+    
+    func configureNavigationBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor(hexString: "30E8E8")
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        navigationController?.navigationBar.tintColor = .clear
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
+    
+    func configureBillAmountView() {
+        billAmountView.layer.borderWidth = 0
+        billAmountView.backgroundColor = UIColor(hexString: "30E8E8")
+        billAmountLabel.text = "$ \(model.billAmount)"
+        
+    }
+    
+    func configureTableview() {
         billDetailsTableView.delegate = self
         billDetailsTableView.dataSource = self
+        billDetailsTableView.backgroundColor = .white
         
-        let HorizontalCell = UINib(nibName:"HorizontalSelectionTableViewCell", bundle: nil)
-        billDetailsTableView.register(HorizontalCell, forCellReuseIdentifier: "HorizontalSelectionTableViewCell")
+        let tipCell = UINib(nibName: "TipSliderTableViewCell", bundle: nil)
+        let horizontalCell = UINib(nibName:"HorizontalSelectionTableViewCell", bundle: nil)
+        
+        billDetailsTableView.register(tipCell, forCellReuseIdentifier: "TipSliderTableViewCell")
+        billDetailsTableView.register(horizontalCell, forCellReuseIdentifier: "HorizontalSelectionTableViewCell")
     }
-    
-    func configureTextField() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard (_:)))
-        view.addGestureRecognizer(tapGesture)
-    }
-    
-}
-
-// MARK: - UITableViewDelegate
-extension BillDetailsViewController: UITableViewDelegate {
     
 }
 
 // MARK: - UITableViewDataSource
 extension BillDetailsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = billDetailsTableView.dequeueReusableCell(withIdentifier:"HorizontalSelectionTableViewCell", for: indexPath) as! HorizontalSelectionTableViewCell
+        let cell = billDetailsTableView.dequeueReusableCell(withIdentifier:"TipSliderTableViewCell", for: indexPath) as! TipSliderTableViewCell
         return cell
     }
 }
 
-
-// MARK: - UITextFieldDelegate
-extension BillDetailsViewController: UITextFieldDelegate {
-    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
-        billAmountTextField.resignFirstResponder()
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-    }
-    
-}
 
 
 // start with 0.00 have it be grey out
