@@ -8,6 +8,7 @@
 import UIKit
 
 class TipSliderTableViewCell: UITableViewCell {
+    let identifier = "TipSliderTableViewCell"
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tipSlider: UISlider!

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2537EA02664680500AF67A8 /* AddItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2537E9E2664680500AF67A8 /* AddItemTableViewCell.swift */; };
+		D2537EA12664680500AF67A8 /* AddItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2537E9F2664680500AF67A8 /* AddItemTableViewCell.xib */; };
+		D2537EA526646D0800AF67A8 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2537EA326646D0800AF67A8 /* ItemTableViewCell.swift */; };
+		D2537EA626646D0800AF67A8 /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2537EA426646D0800AF67A8 /* ItemTableViewCell.xib */; };
 		D275A28225FD857300C6AAE6 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D275A28125FD857300C6AAE6 /* UIView+Ext.swift */; };
 		D2A6937F25B392F0009C1F69 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2A6937E25B392F0009C1F69 /* Localizable.strings */; };
 		D2B07C87259AC02B003CDBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B07C86259AC02B003CDBC6 /* AppDelegate.swift */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2537E9E2664680500AF67A8 /* AddItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewCell.swift; sourceTree = "<group>"; };
+		D2537E9F2664680500AF67A8 /* AddItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemTableViewCell.xib; sourceTree = "<group>"; };
+		D2537EA326646D0800AF67A8 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		D2537EA426646D0800AF67A8 /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		D275A28125FD857300C6AAE6 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		D2A6937E25B392F0009C1F69 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		D2B07C83259AC02B003CDBC6 /* Splitz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splitz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2537EA226646CDD00AF67A8 /* ItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				D2537EA326646D0800AF67A8 /* ItemTableViewCell.swift */,
+				D2537EA426646D0800AF67A8 /* ItemTableViewCell.xib */,
+			);
+			path = ItemCell;
+			sourceTree = "<group>";
+		};
 		D275A27C25FD83AE00C6AAE6 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +213,8 @@
 		D2B142BF2664308E004F8014 /* AddItemCell */ = {
 			isa = PBXGroup;
 			children = (
+				D2537E9E2664680500AF67A8 /* AddItemTableViewCell.swift */,
+				D2537E9F2664680500AF67A8 /* AddItemTableViewCell.xib */,
 			);
 			path = AddItemCell;
 			sourceTree = "<group>";
@@ -213,6 +232,7 @@
 		D2F45936265AC16B00353702 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D2537EA226646CDD00AF67A8 /* ItemCell */,
 				D2B142BF2664308E004F8014 /* AddItemCell */,
 				D2F086D4265DE7AE001BB2B5 /* TipSliderCell */,
 			);
@@ -322,10 +342,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2537EA12664680500AF67A8 /* AddItemTableViewCell.xib in Resources */,
 				D2B07C96259AC02C003CDBC6 /* LaunchScreen.storyboard in Resources */,
 				D2A6937F25B392F0009C1F69 /* Localizable.strings in Resources */,
 				D2B07C93259AC02C003CDBC6 /* Assets.xcassets in Resources */,
 				D2F086D8265DE7D6001BB2B5 /* TipSliderTableViewCell.xib in Resources */,
+				D2537EA626646D0800AF67A8 /* ItemTableViewCell.xib in Resources */,
 				D2B07C8E259AC02B003CDBC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,6 +376,8 @@
 				D275A28225FD857300C6AAE6 /* UIView+Ext.swift in Sources */,
 				D2B07C8B259AC02B003CDBC6 /* BillScannerViewController.swift in Sources */,
 				D2F45942265AC46600353702 /* Extensions.swift in Sources */,
+				D2537EA02664680500AF67A8 /* AddItemTableViewCell.swift in Sources */,
+				D2537EA526646D0800AF67A8 /* ItemTableViewCell.swift in Sources */,
 				D2F086DA265DE7E8001BB2B5 /* TipSliderCellViewModel.swift in Sources */,
 				D2F4594F265B49A500353702 /* BillDetailsViewModel.swift in Sources */,
 				D2B07C91259AC02B003CDBC6 /* Splitz.xcdatamodeld in Sources */,
