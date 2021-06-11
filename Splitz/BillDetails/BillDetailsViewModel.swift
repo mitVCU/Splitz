@@ -16,5 +16,6 @@ struct BillDetailsViewModel {
     }
     
     var billAmount = 210
+    var numberOfCells = 2
 
 }

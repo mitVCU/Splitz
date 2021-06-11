@@ -8,6 +8,7 @@
 import UIKit
 
 class TipSliderTableViewCell: UITableViewCell {
+    let identifier = "TipSliderTableViewCell"
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tipSlider: UISlider!
@@ -20,8 +21,8 @@ class TipSliderTableViewCell: UITableViewCell {
         configureTipSlider()
         configuretipValueLabel()
         titleLabel.text = model.title
-        titleLabel.textColor = UIColor(hexString: "AEAFBC")
-        tipValueLabel.textColor = UIColor(hexString: "30E8E8")
+        titleLabel.textColor = App.Colors.textColor
+        tipValueLabel.textColor = App.Colors.accentColor
     }
     
     @IBAction func tipSliderValueDidChange(_ sender: UISlider) {
@@ -41,7 +42,7 @@ class TipSliderTableViewCell: UITableViewCell {
         tipSlider.minimumValue = 0
         tipSlider.maximumValue = 100
         tipSlider.value = Float(model.sliderValue)
-        tipSlider.tintColor = UIColor(hexString: "30E8E8")
+        tipSlider.tintColor = App.Colors.accentColor
     }
     
 }
