@@ -15,7 +15,7 @@ class ItemTableViewCell: UITableViewCell {
         didSet {
             mainBackgroundView.layer.borderWidth = 1.5
             mainBackgroundView.layer.cornerRadius = 14
-            mainBackgroundView.layer.borderColor = UIColor(hexString: "30E8E8")?.cgColor
+            mainBackgroundView.layer.borderColor = App.Colors.accentColor?.cgColor
         }
     }
     @IBOutlet weak var shadowView: UIView!
@@ -24,7 +24,7 @@ class ItemTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleLabel.textColor =  UIColor(hexString: "30E8E8")
-        priceLabel.textColor =  UIColor(hexString: "30E8E8")
+        titleLabel.textColor =  App.Colors.accentColor
+        priceLabel.textColor =  App.Colors.accentColor
     }
 }

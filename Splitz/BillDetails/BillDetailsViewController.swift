@@ -26,7 +26,7 @@ class BillDetailsViewController: UIViewController, UITableViewDelegate {
     func configureNavigationBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = UIColor(hexString: "30E8E8")
+        appearance.backgroundColor = App.Colors.accentColor
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
 
@@ -38,7 +38,7 @@ class BillDetailsViewController: UIViewController, UITableViewDelegate {
     
     func configureBillAmountView() {
         billAmountView.layer.borderWidth = 0
-        billAmountView.backgroundColor = UIColor(hexString: "30E8E8")
+        billAmountView.backgroundColor = App.Colors.accentColor
         billAmountLabel.text = "$ \(model.billAmount)"
         
     }

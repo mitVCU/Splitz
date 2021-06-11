@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D22C2503266C0F7200F566D7 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22C2502266C0F7200F566D7 /* StyleGuide.swift */; };
 		D2537EA02664680500AF67A8 /* AddItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2537E9E2664680500AF67A8 /* AddItemTableViewCell.swift */; };
 		D2537EA12664680500AF67A8 /* AddItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2537E9F2664680500AF67A8 /* AddItemTableViewCell.xib */; };
 		D2537EA526646D0800AF67A8 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2537EA326646D0800AF67A8 /* ItemTableViewCell.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D22C2502266C0F7200F566D7 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		D2537E9E2664680500AF67A8 /* AddItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewCell.swift; sourceTree = "<group>"; };
 		D2537E9F2664680500AF67A8 /* AddItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddItemTableViewCell.xib; sourceTree = "<group>"; };
 		D2537EA326646D0800AF67A8 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				D2A6937E25B392F0009C1F69 /* Localizable.strings */,
 				D2F45941265AC46600353702 /* Extensions.swift */,
+				D22C2502266C0F7200F566D7 /* StyleGuide.swift */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				D2B60D7F25BBBA9400646196 /* BillDetailsViewController.swift in Sources */,
 				D2B07C87259AC02B003CDBC6 /* AppDelegate.swift in Sources */,
 				D2B07C89259AC02B003CDBC6 /* SceneDelegate.swift in Sources */,
+				D22C2503266C0F7200F566D7 /* StyleGuide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

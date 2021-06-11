@@ -13,7 +13,7 @@ class AddItemTableViewCell: UITableViewCell {
         didSet {
             mainBackgroundView.layer.borderWidth = 2
             mainBackgroundView.layer.cornerRadius = 10
-            mainBackgroundView.layer.borderColor = UIColor(hexString: "30E8E8")?.cgColor
+            mainBackgroundView.layer.borderColor = App.Colors.accentColor?.cgColor
         }
     }
     @IBOutlet weak var titleLabel: UILabel!
@@ -22,6 +22,6 @@ class AddItemTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         titleLabel.text = "+ Add an Item"
-        titleLabel.textColor =  UIColor(hexString: "30E8E8")
+        titleLabel.textColor =  App.Colors.accentColor
     }
 }
